@@ -1,7 +1,10 @@
 import requests
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 
-getURL = "https://us.api.blizzard.com/data/wow/connected-realm/11?namespace=dynamic-us&locale=en_US&access_token=EUckrcx7tBQNK9eDm5IzuW95rpfOZMAudS"
+getURL = os.getenv("API_URL")
 
 
 def get_status():

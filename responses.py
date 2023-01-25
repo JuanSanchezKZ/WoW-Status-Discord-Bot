@@ -1,4 +1,3 @@
-import random
 import scrapper
 
 def handle_response(message) -> str:
